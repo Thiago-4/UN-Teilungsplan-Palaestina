@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ein Blick in den nahen Osten</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Menu</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">aktuelles und Relevanz</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Startseite
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Der Teilungsplan</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Untersuchung
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="vorgeschichte.html">Die Vorgeschichte</a>
+                                    <a class="nav-link" href="Probleme.html">Entstehung</a>
+                                    <a class="nav-link" href="prob.html">Probleme</a>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Unser Lösungsungsvorschlag</div>
+                            <a class="nav-link" href="losung.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-check"></i></div>
+                                Lösungsungsvorschlag 
+                            </a>
+                            <a class="nav-link" href="livebog.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-info"></i></div>
+                                Liveblog 
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Quellen</div>
+                            <a class="nav-link" href="quellen.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                                Quellen 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Ersteller</div>
+                        Cosmo Trakal, Mika Baumann
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Die Vorgeschichte</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Was kam davor?</li>
+                        </ol>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12">
+                                <div class="hover-zoom p-4 rounded shadow bg-light text-center my-3">
+                                    <h2 class="display-6 text-primary mb-3" style="font-size: 40px;">Was kam davor?</h2>
+                                    <p class="lead text-secondary" style="font-size: 25px;">
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-12 col-lg-12">
+                                <div class="card bg-dark text-white mb-4">
+                                    <div class="card-body text-center">
+                                        <img src="assets/img/Flag_of_the_Ottoman_Empire_(1844–1922).svg.png" alt="israel Flagge" class="hover-zoom img-fluid rounded" style="height: 25%;">
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <p style="font-size: 15px; color: white;">
+                                            Flagge des Osmanischen Reiches von 1844 bis 1922
+                                        </p>
+                                        <div class="small text-white"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-12">
+                                <div class="col-auto">
+                                    <div class="card bg-dark text-white mb-4">
+                                        <div class="card-body text-center">
+                                            <div class="hover-zoom p-4 rounded shadow bg-light text-center my-3">
+                                                <h2 class="display-6 text-primary mb-3" style="font-size: 45px; padding-bottom: 30px;">Palästina unter Osmanischer Herrschaft</h2>
+                                                <p class="lead text-secondary" style="font-size: 22px; text-align: left;">
+                                                    Die Region von Palästina gehört von  1516 bis 1917 zum sogenannten osmanischem Reich. Zu der Zeit lag Palästina an der südöstlichen Küste des Mittelmeeres. Heute liegen dort der Staat Israel, der Gazastreifen, das Westjordanland, Teile Syriens, des Libanon und Jordaniens (das Ostjordanland). Nachdem osmanische Türken im Jahr 1516 die dort regierenden Mamluken besiegten, gliederten sie Palästina in das Osmanische Reich ein, dessen Bestandteil es mehr als vier Jahrhunderte lang war. Die Region war sehr muslimisch geprägt und da sich das osmanische Reich immer weiter ausbreitete war ein baldiger Widerstand nicht abzusehen.  In Palästina gab es zu der Zeit kaum Juden und Christen. Allerdings gab es weitestgehend kaum Einschränkungen für jüdische und christliche Gemeinden. Da das osmanische Reich so groß war regierten meist Lokalherrscher die einzelnen Regionen, so auch in Palästina. Dieser (Dhaher al-Omar, 1690 bis 1775) sprach sich offen gegen die Zentralregierung des Osmanischen Reiches aus. Nachdem der ägyptische Herrscher  Ali Bey al-Kabir sich unabhängig vom osmanischen Reich machte, stellte Daher sich an dessen Seite. Doch Ali Bey al-Kabir wurde bei einer pro-osmanischen Verschwörung getötet. Daher el-Omars Hauptstadt Akko wurde von osmanischen Regierungstruppen eingenommen und er selbst gefangen genommen. Schließlich starb er auf der Flucht. Im 19 Jh. kam es vermehrt zu Unabhängigkeiten von Provinzen. Ägypten eroberte Syrien und Palästina und fügte dem osmanischen Reich eine starke Niedderlage zu. Dadurch gab es nun mehr Gleichberechtigung für Christen und Juden.Nach einigen Jahren mussten sich die Ägypter wieder zurück ziehen. Die wichtigsten europäischen Großmächte, allen voran Großbritannien, unterstützten das Osmanische Reich in seinen Bestrebungen, die alten Gebiete zurück zu gewinnen. In der zweiten Hälfte des 19. Jahrhunderts nahm das Interesse der Europäer am Heiligen Land zu. Aus Europa kamen auch die ersten Gruppen jüdischer Siedler, um sich in Palästina anzusiedeln.1909 wurde die erste moderne jüdische Stadt gegründet: Tel-Aviv. Im ersten Weltkrieg verbündete sich das osmanische Reich mit dem Deutschen Reich und Österreich-Ungarn. Mit dem Ende des Krieges fiel das osmanische Reich auseinander. Die Kolonialmächte Großbritannien und Frankreich teilten sich den Nahen Osten untereinander auf. In dem Sykes-Picot-Abkommen von 1916 war vereinbart worden, das Großbritannien nach dem Krieg die Kontrolle über Palästina und den Irak, Frankreich über den Libanon und Syrien bekommt. Somit begann mit dem Ende des Ersten Weltkriegs bzw. praktisch schon mit der Besetzung Palästinas 1917 die britische Herrschaft in Form einer Militärverwaltung und schließlich 1920 mit dem Mandat des Völkerbundes.
+                                                    <br><br>
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                        <div class="card-footer d-flex align-items-center justify-content-between">
+                                            <p>Palästina unter Osmanischer Herrschaft</p>
+                                            <div class="small text-white"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="accordion" id="summaryAccordion" style="padding-bottom: 30px;">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      <h2>Zusammenfassung</h2>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#summaryAccordion">
+                                    <div class="accordion-body">
+                                      <p>
+                                        <ul class="custom-list" style="font-size: 22px;">
+                                            <li>Palästina gehörte von 1516 bis 1917 zum Osmanischen Reich.</li>
+                                            <li>Die Region war stark muslimisch geprägt, mit kaum Einschränkungen für jüdische und christliche Gemeinden.</li>                                            
+                                            <li>Die Verwaltung lag oft bei Lokalherrschern, wie Dhaher al-Omar, der gegen die osmanische Zentralregierung rebellierte, aber scheiterte.</li>
+                                            <li>Im 19. Jahrhundert gab es Unabhängigkeitsbestrebungen und mehr Gleichberechtigung für Christen und Juden durch europäische Einflüsse.</li>
+                                            <li> Erste jüdische Siedler kamen aus Europa, und 1909 wurde Tel Aviv als erste moderne jüdische Stadt gegründet.</li>
+                                            <li>Nach dem Ersten Weltkrieg zerfiel das Osmanische Reich.</li>
+                                            <li>Großbritannien übernahm Palästina, zunächst durch eine Militärverwaltung, später durch das Mandat des Völkerbundes (Sykes-Picot-Abkommen von 1916).</li>
+                                          </ul>
+                                          
+                                          <style>
+                                            .custom-list {
+                                              list-style: none;
+                                              padding: 0;
+                                            }
+                                            .custom-list li {
+                                              position: relative;
+                                              padding-left: 25px;
+                                              margin-bottom: 10px;
+                                            }
+                                            .custom-list li::before {
+                                              content: "-"; /* Benutzerdefiniertes Symbol */
+                                              position: absolute;
+                                              left: 0;
+                                              color: green;
+                                            }
+                                          </style>                                         
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>            
+                        </div>
+                        <div class="row">
+                            <div class="hover-zoom p-4 rounded shadow bg-light text-center my-3">
+                                    <h2 class="display-6 text-primary mb-3" style="font-size: 40px;">Erste moderne jüdische Stadt: Tel Aviv</h2>
+                                    <p class="lead text-secondary" style="font-size: 25px;">
+                                        
+                                    </p>
+                                </div>
+                        </ol>
+                        </div>
+                        <div class="row" style="padding-top: 30px; padding-bottom: 30px;">
+                            <div id="map-container" style="display: flex; justify-content: center; align-items: center; height: auto; margin: 20px 0;">
+                                <div id="map" style="height: 400px; width: 80%;"></div>
+                              </div>
+                              
+                        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+                        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                        <script>
+                        const map = L.map('map').setView([32.0833, 34.8000], 10);
+                        L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                        }).addTo(map);
+                        L.marker([32.0833, 34.8000]).addTo(map).bindPopup('Erste jüdische Stadt Tel Aviv').openPopup();
+                        </script>
+                        </div>
+                        <style>
+                            #map {
+                              height: 300px; /* Kleinere Höhe für mobile Geräte */
+                            }
+                          
+                            @media (min-width: 768px) {
+                              #map {
+                                height: 400px; /* Größere Höhe für Tablets und Desktops */
+                              }
+                            }
+                          </style>
+                          
+
+                          <div class="row">
+                            <div class=" col-md-12 col-lg-12">
+                                <div class="card bg-dark text-white mb-4">
+                                    <div class="card-body text-center">
+                                        <div class="hover-zoom p-4 rounded shadow bg-light text-center my-3">
+                                            <h2 class="display-6 text-primary mb-3" style="font-size: 45px; padding-bottom: 30px;">Palästina als britisches Mandatsgebiet</h2>
+                                            <p class="lead text-secondary" style="font-size: 21px; text-align: left;">
+                                                Palästina war von 1920–1948 unter britischer Mandatsherrschaft.  Es gab zu der Zeit viele politische Umwälzungen, gesellschaftliche Spannungen und die Grundlagen für den späteren israelisch-palästinensischen Konflikt. Nachdem der erste Weltkrieg vorbei war und das osmanische Reich zerfiel war Palästina unter britischer Verwaltung. Als Grundlage nutzte man die 1917 von Großbritannien ausgesprochenen Balfour-Deklaration. Es wurde der jüdischen Bevölkerung eine „nationalen Heimstätte“ in Palästina zugesagt. Es sollte allerdings nicht die arabische Bevölkerung beeinträchtigt werden.  Das Mandat trat 1923 offiziell in Kraft und hatte drei wichtige Ziele:
+                                                1. Errichtung einer jüdischen nationalen Heimstätte.
+                                                2. Die Sicherstellung der Rechte der arabischen Bevölkerung.
+                                                3. Eine geregelte Verwaltung zu fördern.
+                                                Jerusalem wurde die Hauptstadt und die britische Regierung leitete das Mandat. Die Politik der Briten war nicht besonders konsequent. Einerseits hatten sie die zionistische Einwanderung und die Landverkäufe gefördert, andererseits hatten sie versucht, die Araber auf Seiten, die sich gegen diese Entwicklungen bildeten, zu beruhigen. Viele Juden  zogen in der Mandatszeit in die Region, angetrieben durch den Zionismus und die bedrohte Lage der Juden in Europa (vor allem in der Zeit des Holocaust). Allerdings fühlte sich die arabisch-muslimische Bevölkerung, die in der Mehrheit war, bedroht. Zwischen 1922 und 1947 stieg die jüdische Bevölkerung von etwa 84.000 auf 630.000 an, während das arabische Bevölkerungswachstum von 660.000 auf etwa 1,2 Millionen stieg. Aufgrund dessen kam es immer wieder zu Auseinandersetzungen: 
+                                                Jaffa-Unruhen (1921): Zusammenstöße zwischen Arabern und Juden, die in vielen Todesfällen und Verletzten auf beiden Seiten zur Folge hatten.
+                                                Hebron-Massaker (1929): Arabische Pogrome gegen jüdische Siedlungen, besonders in Hebron, verursachten viele Tote und Zwangsumsiedlungen.
+                                                Der Arabische Aufstand (1936-1939): Ein großer Volksaufstand der Araber gegen die britische Kolonialherrschaft und die zionistische Einwanderung, der von den Briten mit brutaler Gewalt unterdrückt wurde.
+                                                Im so genannten Peel-Plan (1937) brachte Großbritannien den Vorschlag, Palästina in einen jüdischen und einen arabischen Staat zu teilen. Die Araber lehnten den Plan ab.
+                                                Nach dem Zweiten Weltkrieg und dem Holocaust gab es großen internationalen Druck auf Großbritannien, sie sollen die jüdische Einwanderung nach Palästina erleichtern. Die britische Politik schwankte zwischen der Beschränkung der Einwanderung (weißes Papier von 1939) und der Suche nach einer dauerhaften Lösung. 1947 erklärte Großbritannien, nicht länger in der Lage zu sein, die von Juden und Arabern geführten Gewaltausbrüche in Palästina einzudämmen, und kündigte die Aufgabe des Mandats an. Daraufhin schlugen die Vereinten Nationen den UN-Teilungsplan vor.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <p style="font-size: 15px; color: white;">
+                                            Palästina als britisches Mandatsgebiet
+                                        </p>
+                                        <div class="small text-white"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-12 col-lg-12">
+                                <div class="col-auto">
+                                    <div class="card bg-dark text-white mb-4">
+                                        <div class="card-body text-center">
+                                            <img src="assets/img/union-jack.png" alt="Union Jack" class="img-fluid hover-zoom" style="padding-top: 15px; padding-bottom: 15px;">
+                                        </div>
+                                        <div class="card-footer d-flex align-items-center justify-content-between">
+                                            <p>Britischer Union Jack</p>
+                                            <div class="small text-white"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="accordion" id="summaryAccordion" style="padding-bottom: 30px;">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      <h2>Zusammenfassung</h2>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#summaryAccordion">
+                                    <div class="accordion-body">
+                                      <p>
+                                        <ul class="custom-list" style="font-size: 22px;">
+                                            <li>Palästina stand von 1920 bis 1948 unter britischer Mandatsherrschaft.</li>
+                                            <li>Die Mandatszeit war geprägt von politischen Umwälzungen, gesellschaftlichen Spannungen und bildete die Grundlage für den späteren israelisch-palästinensischen Konflikt.</li>
+                                            <li>Die Balfour-Deklaration von 1917 versprach eine jüdische „nationale Heimstätte“, sollte jedoch die Rechte der arabischen Bevölkerung wahren.</li>
+                                            <li>Während der Mandatszeit stieg die jüdische Bevölkerung durch zionistische Einwanderung stark an, was zu Konflikten mit der arabischen Mehrheit führte.</li>
+                                            <li>
+                                              Wichtige Ereignisse:
+                                              <ul>
+                                                <li><strong>Jaffa-Unruhen (1921):</strong> Zusammenstöße zwischen Arabern und Juden.</li>
+                                                <li><strong>Hebron-Massaker (1929):</strong> Arabische Pogrome gegen jüdische Siedler.</li>
+                                                <li><strong>Arabischer Aufstand (1936–1939):</strong> Arabische Rebellion gegen britische Kolonialherrschaft und zionistische Einwanderung.</li>
+                                                <li><strong>Peel-Plan (1937):</strong> Vorschlag zur Teilung Palästinas, der von den Arabern abgelehnt wurde.</li>
+                                              </ul>
+                                            </li>
+                                            <li>Nach dem Holocaust wuchs der internationale Druck auf Großbritannien, die jüdische Einwanderung zu erleichtern.</li>
+                                            <li>1947 gab Großbritannien das Mandat auf, und die Vereinten Nationen schlugen den Teilungsplan vor.</li>
+                                          </ul>
+                                          
+                                          
+                                          <style>
+                                            .custom-list {
+                                              list-style: none;
+                                              padding: 0;
+                                            }
+                                            .custom-list li {
+                                              position: relative;
+                                              padding-left: 25px;
+                                              margin-bottom: 10px;
+                                            }
+                                            .custom-list li::before {
+                                              content: "-"; /* Benutzerdefiniertes Symbol */
+                                              position: absolute;
+                                              left: 0;
+                                              color: green;
+                                            }
+                                          </style>                                         
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>            
+                        </div>
+
+                        <style>
+                            .chart-container {
+                              display: flex;
+                              justify-content: center;
+                              gap: 5rem;
+                              padding-top: 30px;
+                              padding-bottom: 30px;
+                            }
+                          </style>
+                          <div class="chart-container">
+                            <canvas id="jewishPopulationChart" width="400" height="300"></canvas>
+                            <canvas id="arabPopulationChart" width="400" height="300"></canvas>
+                          </div>
+                        
+                          <script>
+                            const jewishData = {
+                              labels: ['1922', '1947'],
+                              datasets: [{
+                                label: 'Jüdische Bevölkerung',
+                                data: [84000, 630000],
+                                backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                                borderColor: 'rgba(54, 162, 235, 1)',
+                                borderWidth: 1
+                              }]
+                            };
+                        
+                            const jewishConfig = {
+                              type: 'bar',
+                              data: jewishData,
+                              options: {
+                                responsive: false, // Responsive deaktivieren
+                                plugins: {
+                                  title: {
+                                    display: true,
+                                    text: 'Jüdische Bevölkerung (1922–1947)'
+                                  }
+                                },
+                                scales: {
+                                  y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                      stepSize: 200000
+                                    }
+                                  }
+                                }
+                              }
+                            };
+                        
+                            const jewishChart = new Chart(
+                              document.getElementById('jewishPopulationChart'),
+                              jewishConfig
+                            );
+                        
+                            const arabData = {
+                              labels: ['1922', '1947'],
+                              datasets: [{
+                                label: 'Arabische Bevölkerung',
+                                data: [660000, 1200000],
+                                backgroundColor: 'rgba(255, 99, 132, 0.7)',
+                                borderColor: 'rgba(255, 99, 132, 1)',
+                                borderWidth: 1
+                              }]
+                            };
+                        
+                            const arabConfig = {
+                              type: 'bar',
+                              data: arabData,
+                              options: {
+                                responsive: false,
+                                plugins: {
+                                  title: {
+                                    display: true,
+                                    text: 'Arabische Bevölkerung (1922–1947)'
+                                  }
+                                },
+                                scales: {
+                                  y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                      stepSize: 200000
+                                    }
+                                  }
+                                }
+                              }
+                            };
+                        
+                            const arabChart = new Chart(
+                              document.getElementById('arabPopulationChart'),
+                              arabConfig
+                            );
+                          </script>
+
+
+
+
+
+
+
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                              <style>
+                                .question {
+                                    display: none;
+                                }
+                                .question.active {
+                                    display: block;
+                                }
+                            </style>
+                            <div class="container my-5">
+                                <h1 class="text-center mb-4">Quiz zur Vorgeschichte</h1>
+                                <form id="quizForm">
+                                    <!-- Progress Bar -->
+                                    <div class="progress mb-4" style="height: 20px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" id="progressBar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                                    </div>
+                        
+                                    <!-- Question 1 -->
+                                    <div id="question-1" class="question active">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="mb-3">1. Unter welcher Verwaltung lag Palästina um 1916?</h3>
+                                                <div class="list-group">
+                                                    <div class="list-group-item">
+                                                        <input class="form-check-input me-2" type="radio" name="q1" value="" id="q1a">
+                                                        <label class="form-check-label" for="q1a">der des britischen Mandats</label>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <input class="form-check-input me-2" type="radio" name="q1" value="" id="q1b">
+                                                        <label class="form-check-label" for="q1b">Osmanischen Reich</label>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <input class="form-check-input me-2" type="radio" name="q1" value="" id="q1c">
+                                                        <label class="form-check-label" for="q1c">Türkei</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Question 2 -->
+                                    <div id="question-2" class="question">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="mb-3">2. Welche Kolonialmächte teilten den nahen Osten nach dem 2. Weltkrieg unter sich auf?</h3>
+                                                <div class="list-group">
+                                                    <div class="list-group-item">
+                                                        <input class="form-check-input me-2" type="radio" name="q2" value="10" id="q2a">
+                                                        <label class="form-check-label" for="q2a">Großbritannien und Frankreich</label>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <input class="form-check-input me-2" type="radio" name="q2" value="12" id="q2b">
+                                                        <label class="form-check-label" for="q2b">Großbritannien und Spanien</label>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <input class="form-check-input me-2" type="radio" name="q2" value="14" id="q2c">
+                                                        <label class="form-check-label" for="q2c">Frankreich und Spanien</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Question 3 -->
+                                    <div id="question-3" class="question">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h3 class="mb-3">3. Warum wuchs in der Zeit zwischen 1922 und 1947 die jüdische Bevölkerung in Palästina enorm an?</h3>
+                                                <div class="list-group">
+                                                    <div class="list-group-item">
+                                                        <input class="form-check-input me-2" type="radio" name="q3" value="2" id="q3a">
+                                                        <label class="form-check-label" for="q3a">aufgrund Judenverfolgeung und politischen Unruhen in Europa</label>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <input class="form-check-input me-2" type="radio" name="q3" value="4" id="q3b">
+                                                        <label class="form-check-label" for="q3b">aufgrund einer Prophezeiung in Koran</label>
+                                                    </div>
+                                                    <div class="list-group-item">
+                                                        <input class="form-check-input me-2" type="radio" name="q3" value="8" id="q3c">
+                                                        <label class="form-check-label" for="q3c">aufgrund einer hohen Fertilitätsrate</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Question 4 -->
+                                    <div id="question-4" class="question">
+                                      <div class="card">
+                                          <div class="card-body">
+                                              <h3 class="mb-3">4. Was war die Idee des Peel-Plans?</h3>
+                                              <div class="list-group">
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q4" value="2" id="q4a">
+                                                      <label class="form-check-label" for="q4a">eine militärische Strategie den Arabischen Aufstand nidederzuzwingen</label>
+                                                  </div>
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q4" value="4" id="q4b">
+                                                      <label class="form-check-label" for="q4b">eine Methode um mit der jüdischen Einwanderung klarzukommen</label>
+                                                  </div>
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q4" value="8" id="q4c">
+                                                      <label class="form-check-label" for="q4c">ein Vorschlag um Palästina in einen jüdischen und arabischen Teil zu separieren</label>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <!-- Question 5 -->
+                                  <div id="question-5" class="question">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="mb-3">5. Warum gab Großbritannien das britische Mandat in Palästina auf?</h3>
+                                            <div class="list-group">
+                                                <div class="list-group-item">
+                                                    <input class="form-check-input me-2" type="radio" name="q5" value="2" id="q5a">
+                                                    <label class="form-check-label" for="q5a">weil sie mit einer finanziellen Kriese klarkommen mussten</label>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <input class="form-check-input me-2" type="radio" name="q5" value="4" id="q5b">
+                                                    <label class="form-check-label" for="q5b">weil sie nicht in der Lage waren die Gewaltausbrüche zu stoppen</label>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <input class="form-check-input me-2" type="radio" name="q5" value="8" id="q5c">
+                                                    <label class="form-check-label" for="q5c">weil sie von der UN dazu gezwungen wurden</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                    <!-- Navigation Buttons -->
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <button type="button" class="btn btn-secondary" id="prevBtn" disabled>Previous</button>
+                                        <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+                                    </div>
+                                </form>
+                            </div>
+                        
+                            <!-- JavaScript -->
+                            <script>
+                                // JavaScript logic for the Quiz
+                                const totalQuestions = 5;
+                                let currentQuestion = 1;
+                                let answers = {}; // Store user's answers
+
+                                const progressBar = document.getElementById('progressBar');
+                                const prevBtn = document.getElementById('prevBtn');
+                                const nextBtn = document.getElementById('nextBtn');
+
+                                // Correct answers for the quiz
+                                const correctAnswers = {
+                                    1: 'Osmanischen Reich',
+                                    2: 'Großbritannien und Frankreich',
+                                    3: 'aufgrund Judenverfolgeung und politischen Unruhen in Europa',
+                                    4: 'ein Vorschlag um Palästina in einen jüdischen und arabischen Teil zu separieren',
+                                    5: 'weil sie nicht in der Lage waren die Gewaltausbrüche zu stoppen'
+                                };
+
+                                function showQuestion(questionNumber) {
+                                    // Hide all questions
+                                    document.querySelectorAll('.question').forEach((question) => {
+                                        question.classList.remove('active');
+                                    });
+
+                                    if (questionNumber <= totalQuestions) {
+                                        // Show the current question
+                                        document.getElementById(`question-${questionNumber}`).classList.add('active');
+
+                                        // Update progress bar
+                                        const progress = (questionNumber / totalQuestions) * 100;
+                                        progressBar.style.width = `${progress}%`;
+                                        progressBar.innerText = `${Math.round(progress)}%`;
+
+                                        // Disable/enable navigation buttons
+                                        prevBtn.disabled = questionNumber === 1;
+                                        nextBtn.innerText = questionNumber === totalQuestions ? 'Finish' : 'Next';
+                                    } else {
+                                        // Show the result page
+                                        showResults();
+                                    }
+                                }
+
+                                function showResults() {
+                                    // Hide all questions
+                                    document.querySelectorAll('.question').forEach((question) => {
+                                        question.classList.remove('active');
+                                    });
+
+                                    // Create and display result page
+                                    const resultContainer = document.createElement('div');
+                                    resultContainer.className = 'question active';
+                                    resultContainer.id = 'result-page';
+
+                                    let correctCount = 0;
+                                    let unansweredCount = 0;
+                                    let resultHTML = '<div class="card"><div class="card-body">';
+                                    resultHTML += '<h3 class="mb-3">Quiz Ergebnisse</h3><ul class="list-group mb-3">';
+
+                                    for (let i = 1; i <= totalQuestions; i++) {
+                                        const userAnswer = answers[i] || 'Keine Antwort';
+                                        const isCorrect = userAnswer === correctAnswers[i];
+
+                                        if (userAnswer === 'Keine Antwort') {
+                                            unansweredCount++;
+                                        }
+
+                                        if (isCorrect) {
+                                            correctCount++;
+                                        }
+
+                                        resultHTML += `<li class="list-group-item ${isCorrect ? 'list-group-item-success' : 'list-group-item-danger'}">
+                                            Frage ${i}: ${isCorrect ? 'Richtig' : 'Falsch'}<br>
+                                            Ihre Antwort: ${userAnswer}<br>
+                                            Richtige Antwort: ${correctAnswers[i]}
+                                        </li>`;
+                                    }
+
+                                    resultHTML += '</ul>';
+                                    if (unansweredCount > 0) {
+                                        resultHTML += `<h4>Sie haben ${unansweredCount} von ${totalQuestions} Fragen nicht beantwortet.</h4>`;
+                                    }
+                                    resultHTML += `<h4>Richtige Antworten: ${correctCount} von ${totalQuestions}</h4>`;
+                                    resultHTML += '</div></div>';
+
+                                    resultContainer.innerHTML = resultHTML;
+                                    document.getElementById('quizForm').appendChild(resultContainer);
+
+                                    // Hide navigation buttons
+                                    prevBtn.style.display = 'none';
+                                    nextBtn.style.display = 'none';
+                                }
+
+                                prevBtn.addEventListener('click', () => {
+                                    if (currentQuestion > 1) {
+                                        currentQuestion--;
+                                        showQuestion(currentQuestion);
+                                    }
+                                });
+
+                                nextBtn.addEventListener('click', () => {
+                                    if (currentQuestion === totalQuestions) {
+                                        collectAnswers();
+                                        currentQuestion++;
+                                        showQuestion(currentQuestion);
+                                    } else {
+                                        collectAnswers();
+                                        currentQuestion++;
+                                        showQuestion(currentQuestion);
+                                    }
+                                });
+
+                                function collectAnswers() {
+                                    const activeQuestion = document.querySelector('.question.active');
+                                    const selectedOption = activeQuestion.querySelector('input[type="radio"]:checked');
+                                    if (selectedOption) {
+                                        answers[currentQuestion] = selectedOption.nextElementSibling.textContent.trim();
+                                    } else {
+                                        answers[currentQuestion] = 'Keine Antwort';
+                                    }
+                                }
+
+                                // Initialize quiz
+                                showQuestion(currentQuestion);
+
+                            </script>
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                          <div class="col-xl-12 col-md-12">
+                              <div class="card bg-dark text-white mb-4">
+                                  <div class="card-body">Link
+                                      <div class="row">
+                                          <div class="col-xl-12 col-md-12">
+                                              <div class="container my-1">
+                                                  <div class="hover-zoom p-4 rounded shadow bg-light text-center my-3">
+                                                      <h2 class="display-6 text-primary mb-3" style="font-size: 40px;"><a href="Probleme.html">Weiter zur Entstehung</a></h2>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>    
+                                  </div>
+                                  <div class="card-footer d-flex align-items-center justify-content-between">
+                                      <div class="small text-white"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Lösungsungsvorschlag zum Palästina-Konflikt</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

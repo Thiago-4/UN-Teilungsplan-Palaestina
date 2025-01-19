@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ein Blick in den nahen Osten</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+        
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Menu</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div id="layoutSidenav">
+          <div id="layoutSidenav_nav">
+              <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                  <div class="sb-sidenav-menu">
+                      <div class="nav">
+                          <div class="sb-sidenav-menu-heading">aktuelles und Relevanz</div>
+                          <a class="nav-link" href="index.html">
+                              <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                              Startseite
+                          </a>
+                          <div class="sb-sidenav-menu-heading">Der Teilungsplan</div>
+                          <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                              <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                              Untersuchung
+                              <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                          </a>
+                          <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                              <nav class="sb-sidenav-menu-nested nav">
+                                  <a class="nav-link" href="vorgeschichte.html">Die Vorgeschichte</a>
+                                  <a class="nav-link" href="Probleme.html">Entstehung</a>
+                                  <a class="nav-link" href="prob.html">Probleme</a>
+                              </nav>
+                          </div>
+                          <div class="sb-sidenav-menu-heading">Unser Lösungsungsvorschlag</div>
+                          <a class="nav-link" href="losung.html">
+                              <div class="sb-nav-link-icon"><i class="fa-solid fa-check"></i></div>
+                              Lösungsungsvorschlag 
+                          </a>
+                          <a class="nav-link" href="livebog.html">
+                              <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-info"></i></div>
+                              Liveblog 
+                          </a>
+                          <div class="sb-sidenav-menu-heading">Quellen</div>
+                          <a class="nav-link" href="quellen.html">
+                              <div class="sb-nav-link-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                              Quellen 
+                          </a>
+                      </div>
+                  </div>
+                  <div class="sb-sidenav-footer">
+                      <div class="small">Ersteller</div>
+                      Cosmo Trakal, Mika Baumann
+                  </div>
+              </nav>
+          </div>
+          <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Entstehung des Teilungsplans</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Wie ist der Teilungsplan zustande gekommen?</li>
+                        </ol>
+                    </div>
+
+                    <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12 col-md-12">
+                                    <div class="hover-zoom p-4 rounded shadow bg-light text-center my-3">
+                                        <h2 class="display-6 text-primary mb-3" style="font-size: 40px;">Wie kam der Teilungsplan zustande?</h2>
+                                        <p class="lead text-secondary" style="font-size: 25px;">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xl-12">
+                                  <div class="card bg-dark text-white mb-4">
+                                      <div class="card-body text-center">
+                                          <img src="assets/img/UN Sodersitzung.jpg" alt="israel Flagge" class="hover-zoom img-fluid rounded" style="height: 25%;">
+                                      </div>
+                                      <div class="card-footer d-flex align-items-center justify-content-between">
+                                          <div class="small text-white">28. April 1947 UNO-Generalversammlung zur Palästina Frage</div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        
+                        <div class="col-md-12 col-lg-12">
+                            <div class="col-auto">
+                                <div class="card bg-dark text-white mb-4">
+                                    <div class="card-body text-center">
+                                        <div class="hover-zoom p-4 rounded shadow bg-light text-center my-3">
+                                            <h2 class="display-6 text-primary mb-3" style="font-size: 45px; padding-bottom: 30px;">Entstehung des Teilungsplans</h2>
+                                            <p class="lead text-secondary" style="font-size: 22px; text-align: left;">
+                                               Die Entstehung des Plans begann im weitesten Sinne mit der UN-Sondersitzung im April 1947. Dort trafen erstmal Vertreter der Konfliktparteien vor die UN um weiteres zu besprechen. Dabei forderten die arabischen Staaten das Ende des britischen Mandats und die sofortige Unabhängigkeit Palästinas die palästinensischen Araber forderten die Annerkennung ihrer Rechte als Mehrheit der Bevölkerung. Weiterhin lehnte die arabische Position die internationale Unterstützung für den Zionismus ab. Die jüdischen Vertreter forderten auf der anderen Seite, dass man ihren Anspruch auf ein jüdisches Heim in Palästina anerkennen sollte und es wurde die Wichtigkeit der Unterstützung der jüdischen Flüchtlinge  klargemacht. Auf Drängen der britischen Seite wurde in einer weiteren Sitzung der UN ein Sonderkomitees für Palästina auserkoren, welches nach amerikanischem Vorschlag aus Mitgleidern von sieben neutralen Staaten besteht. Dieses hat die Aufgabe Daaten zu sammeln und nach einiger Zeit der Kommission Lösungen vorzuschlagen. Im Juni 1947 begann das UN-Sonderkomitee für Palästina seine Arbeit und bekam allerdings vor Ort die Zusammenarbeit vom Arab Higher Committee verweigert, da dieses 1. kritisierte das die weltweiten religiösen Interessen in den Vordergrund gestellt wurden anstatt die Rechte der arabischen Bevölkerung 2. kritisierte das das Flüchtlingsproblem nach dem 2. Weltkrieg nichts mit Palästina zu tun habe und die jüdische Obdachlosigkeit ein internationales Problem sei 3. der Meinung war das die Beendung des britischen Mandats als klare Verplichtung der UN gelten sollte. Die jüdische Seite zeigte sich dem Komitee zugänglich und unterstützte es mit Dokumenten und Zeugenaussagen. Schlussendlich legt das Komitee der UN 2 Lösungsvorschläge vor 1. die Teilung der Staaten und Jerusalem als internationale Stadt und 2. ein gemeinsamer arabischer und jüdischer Staat mit Rechten für beide Bevölkerungsgruppen und Einschränkung der jüdischen Einwanderung. Durch den Mehrheitsbeschluss wurde sich für den ersten Plan entschieden. 33 Staaten stimmten für den Plan und 13 stimmten dagegen, darunter sechs arabischen UN Mitgliederstaaten. 
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <p>Entstehung des Teilungsplans</p>
+                                        <div class="small text-white"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="accordion" id="summaryAccordion" style="padding-bottom: 30px;">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      <h2>Zusammenfassung</h2>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#summaryAccordion">
+                                    <div class="accordion-body">
+                                      <p>
+                                        <ul class="custom-list" style="font-size: 22px;">
+                                            <li>Die UN-Sondersitzung im April 1947 brachte Vertreter der Konfliktparteien (Araber und Juden) zusammen.</li>
+                                            <li>Arabische Forderungen: Ende des britischen Mandats, Unabhängigkeit Palästinas und Anerkennung der Rechte der palästinensischen Araber.</li>
+                                            <li>Jüdische Forderungen: Anerkennung eines jüdischen Heims in Palästina und Unterstützung für jüdische Flüchtlinge nach dem Holocaust.</li>
+                                            <li>Das UN-Sonderkomitee (ab Juni 1947) bestand aus sieben neutralen Staaten und hatte die Aufgabe, Lösungen für die Palästina-Frage vorzuschlagen.</li>
+                                            <li>Arab Higher Committee verweigerte die Zusammenarbeit aus Protest gegen religiöse Interessen, die Verbindung der Flüchtlingsfrage und das Fehlen einer klaren Verpflichtung zur Beendigung des Mandats.</li>
+                                            <li>Die jüdische Seite unterstützte das Komitee durch Dokumente und Zeugenaussagen.</li>
+                                            <li>Zwei Lösungsvorschläge des Komitees: 
+                                                <ul>
+                                                    <li>Teilung Palästinas: Zwei unabhängige Staaten (jüdisch und arabisch) und Jerusalem als internationale Stadt.</li>
+                                                    <li>Gemeinsamer Staat: Föderierter Staat mit gleichen Rechten und Begrenzung der jüdischen Einwanderung.</li>
+                                                </ul>
+                                            </li>
+                                            <li>Der Mehrheitsbeschluss der UN fiel zugunsten des Teilungsplans.</li>
+                                        </ul>
+                                        
+                                          
+                                          <style>
+                                            .custom-list {
+                                              list-style: none;
+                                              padding: 0;
+                                            }
+                                            .custom-list li {
+                                              position: relative;
+                                              padding-left: 25px;
+                                              margin-bottom: 10px;
+                                            }
+                                            .custom-list li::before {
+                                              content: "-"; /* Benutzerdefiniertes Symbol */
+                                              position: absolute;
+                                              left: 0;
+                                              color: green;
+                                            }
+                                          </style>                                         
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>            
+                        </div>
+                        <div class="row">
+                          <style>
+                            .chart-container {
+                              width: 100%;
+                              max-width: 800px; /* Größere Breite */
+                              height: 500px; /* Feste Höhe für größere Darstellung */
+                              margin: 0 auto;
+                            }
+                          </style>
+                          <div class="chart-container">
+                            <canvas id="voteChart"></canvas>
+                          </div>
+                        
+                          <script>
+                            const ctx = document.getElementById('voteChart').getContext('2d');
+                            const voteChart = new Chart(ctx, {
+                              type: 'pie',
+                              data: {
+                                labels: ['Zustimmung', 'Ablehnung', 'Enthaltungen'],
+                                datasets: [{
+                                  label: 'UN-Teilungsplan Abstimmung',
+                                  data: [33, 13, 10],
+                                  backgroundColor: [
+                                    'rgba(75, 192, 192, 0.6)',
+                                    'rgba(255, 99, 132, 0.6)',
+                                    'rgba(255, 205, 86, 0.6)'
+                                  ],
+                                  borderColor: [
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(255, 205, 86, 1)'
+                                  ],
+                                  borderWidth: 1
+                                }]
+                              },
+                              options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                plugins: {
+                                  title: {
+                                    display: true,
+                                    text: 'Ergebnisse der UN-Teilungsplan-Abstimmung',
+                                    font: {
+                                      size: 18,
+                                      weight: 'bold',
+                                    },
+                                  },
+                                  legend: {
+                                    position: 'top',
+                                  }
+                                }
+                              }
+                            });
+                          </script>
+                        </div>
+                        <div class="row" style="padding-bottom: 40px; padding-top: 30px;">
+                            <style>
+                                body {
+                                  font-family: Arial, sans-serif;
+                                  margin: 20px;
+                                  background: #f9f9f9;
+                                }
+                            
+                                .stepper {
+                                  list-style: none;
+                                  position: relative;
+                                }
+                            
+                                .stepper::before {
+                                  content: '';
+                                  position: absolute;
+                                  left: 20px;
+                                  top: 0;
+                                  bottom: 0;
+                                  width: 2px;
+                                  background: #ddd;
+                                  z-index: 0;
+                                }
+                            
+                                .stepper-step {
+                                  position: relative;
+                                  margin: 0;
+                                  padding-left: 50px;
+                                  cursor: pointer;
+                                  transition: all 0.3s ease;
+                                }
+                            
+                                .stepper-step:hover {
+                                  background: #f3f3f3;
+                                }
+                            
+                                .stepper-step:not(:last-child) {
+                                  margin-bottom: 20px;
+                                }
+                            
+                                .stepper-head {
+                                  display: flex;
+                                  align-items: center;
+                                }
+                            
+                                .stepper-head-icon {
+                                  width: 30px;
+                                  height: 30px;
+                                  background: #007bff;
+                                  color: #fff;
+                                  font-weight: bold;
+                                  border-radius: 50%;
+                                  text-align: center;
+                                  line-height: 30px;
+                                  margin-right: 10px;
+                                  z-index: 1;
+                                  transition: transform 0.3s ease, background 0.3s ease;
+                                }
+                            
+                                .stepper-head-text {
+                                  font-size: 26px;
+                                  font-weight: bold;
+                                  padding-left: 10px;
+                                }
+                            
+                                .stepper-content {
+                                  max-height: 0;
+                                  overflow: hidden;
+                                  transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+                                  padding: 0;
+                                  font-size: 20px;
+                                }
+                            
+                                .stepper-content-open {
+                                  max-height: 150px;
+                                  padding: 40px 0;
+                                }
+                            
+                                .stepper-active .stepper-head-icon {
+                                  background: #28a745;
+                                  transform: scale(1.3);
+                                }
+                            
+                                .stepper-completed .stepper-head-icon {
+                                  background: #ffc107;
+                                }
+                            
+                                .stepper-active .stepper-head-text {
+                                  color: #28a745;
+                                  transition: color 0.3s ease;
+                                }
+                            
+                                .stepper-line {
+                                  position: absolute;
+                                  left: 34px;
+                                  top: 15px;
+                                  height: 100%;
+                                  width: 4px;
+                                  background: #007bff;
+                                  z-index: 0;
+                                  transition: height 0.3s ease;
+                                }
+                        
+                              </style>
+                            
+                            <ul class="stepper">
+                              <li class="stepper-step stepper-completed">
+                                <div class="stepper-head" style="padding-bottom: 20px;">
+                                  <span class="stepper-head-icon">1</span>
+                                  <span class="stepper-head-text">1917: Balfour-Deklaration</span>
+                                </div>
+                                <div class="stepper-content stepper-content-open">
+                                  <span>Der britische Außenminister, James Balfour hat den Zionisten im November 1917 die Unterstützung seiner Regierung für eine nationale jüdische Heimstätte in Palästina zugesichert.</span>
+                                </div>
+                              </li>
+                              <li class="stepper-step stepper-completed">
+                                <div class="stepper-head" style="padding-bottom: 20px;">
+                                  <span class="stepper-head-icon">2</span>
+                                  <span class="stepper-head-text">1922: Großbritannien wird Mandatsmacht</span>
+                                </div>
+                                <div class="stepper-content">
+                                  <span>Großbritannien übernimmt die Verantwortung für Palästina, allerdings wird die Situation nach anhaltenden Kämpfen zwischen Arabern und Juden nicht kontrollierbar.</span>
+                                </div>
+                              </li>
+                              <li class="stepper-step stepper-completed">
+                                <div class="stepper-head" style="padding-bottom: 20px;">
+                                  <span class="stepper-head-icon">3</span>
+                                  <span class="stepper-head-text">Februar 1947: Übergabe an die UN</span>
+                                </div>
+                                <div class="stepper-content">
+                                  <span>Großbritannien erklärt, dass die Verpflichtungen des Mandats unvereinbar sind, und übergibt die Palästina-Frage an die Vereinten Nationen.</span>
+                                </div>
+                              </li>
+                              <li class="stepper-step stepper-completed">
+                                <div class="stepper-head" style="padding-bottom: 20px;">
+                                  <span class="stepper-head-icon">4</span>
+                                  <span class="stepper-head-text">April 1947: UN-Sondersitzung</span>
+                                </div>
+                                <div class="stepper-content">
+                                  <span>In der ersten UN-Sondersitzung zur Palästina-Frage fordern die Arabischen Staaten das Ende des Mandats und die Unabhängigkeit Palästinas. Die jüdische Agentur fordert die Anerkennung eines jüdischen Nationalheims.</span>
+                                </div>
+                              </li>
+                              <li class="stepper-step stepper-completed">
+                                <div class="stepper-head" style="padding-bottom: 20px;">
+                                  <span class="stepper-head-icon">5</span>
+                                  <span class="stepper-head-text">Juni 1947: UNSCOP</span>
+                                </div>
+                                <div class="stepper-content">
+                                  <span>Das United Nations Special Committee on Palestine zusammengesetzt aus 7 neutralen Staaten nimmt seine Untersuchung der Palästina-Frage auf. Dabei kooperiert die jüdische Agentur und liefert Dokumente und Zeugenaussagen, das Arab Higher Committeeverweigert die Zusammenarbeit.</span>
+                                </div>
+                              </li>
+                              <li class="stepper-step stepper-completed">
+                                <div class="stepper-head" style="padding-bottom: 20px;">
+                                  <span class="stepper-head-icon">6</span>
+                                  <span class="stepper-head-text">August 1947: Abschlussbericht des UNSCOP</span>
+                                </div>
+                                <div class="stepper-content">
+                                  <span>Nach der Unterstützung schlägt UNSCOP 2 Lösungen vor: 1. Teilungsplan: Zwei unabhängige Staaten (jüdisch und arabisch) und Jerusalem als internationale Zone, 2. Föderierter Staat: Gemeinsamer Staat mit gleichen Rechten für beide Gruppen, jedoch mit eingeschränkter jüdischer Einwanderung.</span>
+                                </div>
+                              </li>
+                              <li class="stepper-step stepper-completed">
+                                <div class="stepper-head" style="padding-bottom: 20px;">
+                                  <span class="stepper-head-icon">7</span>
+                                  <span class="stepper-head-text">29. November 1947: UN-Generalversammlung</span>
+                                </div>
+                                <div class="stepper-content">
+                                  <span>In der UN-Generalversammlung wird sich per Mehrheitsbeschluss für den Teilungsplan entschieden.</span>
+                                </div>
+                              </li>
+                            </ul>
+                            
+                            <script>
+                              const steps = document.querySelectorAll('.stepper-step');
+                            
+                              steps.forEach((step) => {
+                                step.addEventListener('click', () => {
+                                  const content = step.querySelector('.stepper-content');
+                                  const isOpen = content.classList.contains('stepper-content-open');
+                            
+                                  if (isOpen) {
+                                    content.classList.remove('stepper-content-open');
+                                    step.classList.remove('stepper-active');
+                                  } else {
+                                    // Schließen aller Inhalte
+                                    steps.forEach((otherStep) => {
+                                      const otherContent = otherStep.querySelector('.stepper-content');
+                                      otherContent.classList.remove('stepper-content-open');
+                                      otherStep.classList.remove('stepper-active');
+                                    });
+                            
+                                    // Öffnen des aktuellen Inhalts
+                                    content.classList.add('stepper-content-open');
+                                    step.classList.add('stepper-active');
+                                  }
+                                });
+                              });
+                            </script>
+                        </div>
+                        <div class="row">
+                          <div class="col-xl-12">
+                            <style>
+                              .question {
+                                  display: none;
+                              }
+                              .question.active {
+                                  display: block;
+                              }
+                          </style>
+                          <div class="container my-5">
+                              <h1 class="text-center mb-4">Quiz zur Entstehung</h1>
+                              <form id="quizForm">
+                                  <!-- Progress Bar -->
+                                  <div class="progress mb-4" style="height: 20px;">
+                                      <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" id="progressBar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                                  </div>
+                      
+                                  <!-- Question 1 -->
+                                  <div id="question-1" class="question active">
+                                      <div class="card">
+                                          <div class="card-body">
+                                              <h3 class="mb-3">1. Eine der Forderungen der arabischen Seite bei der UN-Sondersitzung im April 1947 war?</h3>
+                                              <div class="list-group">
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q1" value="" id="q1a">
+                                                      <label class="form-check-label" for="q1a">Annerkennung eines jüdischen Heims in Palästina</label>
+                                                  </div>
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q1" value="" id="q1b">
+                                                      <label class="form-check-label" for="q1b">Das Ende des britischen Mandats</label>
+                                                  </div>
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q1" value="" id="q1c">
+                                                      <label class="form-check-label" for="q1c">Entschädigungen für für das geraubte Land</label>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                      
+                                  <!-- Question 2 -->
+                                  <div id="question-2" class="question">
+                                      <div class="card">
+                                          <div class="card-body">
+                                              <h3 class="mb-3">2. Das UN-Sonderkomitee bestand aus wie vielen verschiedenen neutralen Staaten?</h3>
+                                              <div class="list-group">
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q2" value="10" id="q2a">
+                                                      <label class="form-check-label" for="q2a">10</label>
+                                                  </div>
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q2" value="12" id="q2b">
+                                                      <label class="form-check-label" for="q2b">7</label>
+                                                  </div>
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q2" value="14" id="q2c">
+                                                      <label class="form-check-label" for="q2c">12</label>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                      
+                                  <!-- Question 3 -->
+                                  <div id="question-3" class="question">
+                                      <div class="card">
+                                          <div class="card-body">
+                                              <h3 class="mb-3">3. Der Vorschlag eines gemeinsamen Staates sah welche Stadt als eine internationale Zone an?</h3>
+                                              <div class="list-group">
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q3" value="2" id="q3a">
+                                                      <label class="form-check-label" for="q3a">Jerusalem</label>
+                                                  </div>
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q3" value="4" id="q3b">
+                                                      <label class="form-check-label" for="q3b">Keine</label>
+                                                  </div>
+                                                  <div class="list-group-item">
+                                                      <input class="form-check-input me-2" type="radio" name="q3" value="8" id="q3c">
+                                                      <label class="form-check-label" for="q3c">Tel Aviv</label>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <!-- Question 4 -->
+                                  <div id="question-4" class="question">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3 class="mb-3">4. Wie lautet die Abkürzung für das Sonderkomitee der UN für die Palästina Frage?</h3>
+                                            <div class="list-group">
+                                                <div class="list-group-item">
+                                                    <input class="form-check-input me-2" type="radio" name="q4" value="2" id="q4a">
+                                                    <label class="form-check-label" for="q4a">UNSCOP</label>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <input class="form-check-input me-2" type="radio" name="q4" value="4" id="q4b">
+                                                    <label class="form-check-label" for="q4b">UNCPSO</label>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <input class="form-check-input me-2" type="radio" name="q4" value="8" id="q4c">
+                                                    <label class="form-check-label" for="q4c">UNCWPO</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Question 5 -->
+                                <div id="question-5" class="question">
+                                  <div class="card">
+                                      <div class="card-body">
+                                          <h3 class="mb-3">5. Einer der Gründe warum das Arab Higher Committee die Zusammenarbeit mit dem Sonderkomitee verweigerte war...</h3>
+                                          <div class="list-group">
+                                              <div class="list-group-item">
+                                                  <input class="form-check-input me-2" type="radio" name="q5" value="2" id="q5a">
+                                                  <label class="form-check-label" for="q5a">die parteiische Zusammenstellung des Komitees</label>
+                                              </div>
+                                              <div class="list-group-item">
+                                                  <input class="form-check-input me-2" type="radio" name="q5" value="4" id="q5b">
+                                                  <label class="form-check-label" for="q5b">Die Vorschriften der UN</label>
+                                              </div>
+                                              <div class="list-group-item">
+                                                  <input class="form-check-input me-2" type="radio" name="q5" value="8" id="q5c">
+                                                  <label class="form-check-label" for="q5c">Der Umgang mit dem Flüchtlingsproblem</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                      
+                                  <!-- Navigation Buttons -->
+                                  <div class="d-flex justify-content-between mt-4">
+                                      <button type="button" class="btn btn-secondary" id="prevBtn" disabled>Previous</button>
+                                      <button type="button" class="btn btn-primary" id="nextBtn">Next</button>
+                                  </div>
+                              </form>
+                          </div>
+                      
+                          <!-- JavaScript -->
+                          <script>
+                              // JavaScript logic for the Quiz
+                              const totalQuestions = 5;
+                              let currentQuestion = 1;
+                              let answers = {}; // Store user's answers
+
+                              const progressBar = document.getElementById('progressBar');
+                              const prevBtn = document.getElementById('prevBtn');
+                              const nextBtn = document.getElementById('nextBtn');
+
+                              // Correct answers for the quiz
+                              const correctAnswers = {
+                                  1: 'Das Ende des britischen Mandats',
+                                  2: '7',
+                                  3: 'Keine',
+                                  4: 'UNSCOP',
+                                  5: 'Der Umgang mit dem Flüchtlingsproblem'
+                              };
+
+                              function showQuestion(questionNumber) {
+                                  // Hide all questions
+                                  document.querySelectorAll('.question').forEach((question) => {
+                                      question.classList.remove('active');
+                                  });
+
+                                  if (questionNumber <= totalQuestions) {
+                                      // Show the current question
+                                      document.getElementById(`question-${questionNumber}`).classList.add('active');
+
+                                      // Update progress bar
+                                      const progress = (questionNumber / totalQuestions) * 100;
+                                      progressBar.style.width = `${progress}%`;
+                                      progressBar.innerText = `${Math.round(progress)}%`;
+
+                                      // Disable/enable navigation buttons
+                                      prevBtn.disabled = questionNumber === 1;
+                                      nextBtn.innerText = questionNumber === totalQuestions ? 'Finish' : 'Next';
+                                  } else {
+                                      // Show the result page
+                                      showResults();
+                                  }
+                              }
+
+                              function showResults() {
+                                  // Hide all questions
+                                  document.querySelectorAll('.question').forEach((question) => {
+                                      question.classList.remove('active');
+                                  });
+
+                                  // Create and display result page
+                                  const resultContainer = document.createElement('div');
+                                  resultContainer.className = 'question active';
+                                  resultContainer.id = 'result-page';
+
+                                  let correctCount = 0;
+                                  let unansweredCount = 0;
+                                  let resultHTML = '<div class="card"><div class="card-body">';
+                                  resultHTML += '<h3 class="mb-3">Quiz Ergebnisse</h3><ul class="list-group mb-3">';
+
+                                  for (let i = 1; i <= totalQuestions; i++) {
+                                      const userAnswer = answers[i] || 'Keine Antwort';
+                                      const isCorrect = userAnswer === correctAnswers[i];
+
+                                      if (userAnswer === 'Keine Antwort') {
+                                          unansweredCount++;
+                                      }
+
+                                      if (isCorrect) {
+                                          correctCount++;
+                                      }
+
+                                      resultHTML += `<li class="list-group-item ${isCorrect ? 'list-group-item-success' : 'list-group-item-danger'}">
+                                          Frage ${i}: ${isCorrect ? 'Richtig' : 'Falsch'}<br>
+                                          Ihre Antwort: ${userAnswer}<br>
+                                          Richtige Antwort: ${correctAnswers[i]}
+                                      </li>`;
+                                  }
+
+                                  resultHTML += '</ul>';
+                                  if (unansweredCount > 0) {
+                                      resultHTML += `<h4>Sie haben ${unansweredCount} von ${totalQuestions} Fragen nicht beantwortet.</h4>`;
+                                  }
+                                  resultHTML += `<h4>Richtige Antworten: ${correctCount} von ${totalQuestions}</h4>`;
+                                  resultHTML += '</div></div>';
+
+                                  resultContainer.innerHTML = resultHTML;
+                                  document.getElementById('quizForm').appendChild(resultContainer);
+
+                                  // Hide navigation buttons
+                                  prevBtn.style.display = 'none';
+                                  nextBtn.style.display = 'none';
+                              }
+
+                              prevBtn.addEventListener('click', () => {
+                                  if (currentQuestion > 1) {
+                                      currentQuestion--;
+                                      showQuestion(currentQuestion);
+                                  }
+                              });
+
+                              nextBtn.addEventListener('click', () => {
+                                  if (currentQuestion === totalQuestions) {
+                                      collectAnswers();
+                                      currentQuestion++;
+                                      showQuestion(currentQuestion);
+                                  } else {
+                                      collectAnswers();
+                                      currentQuestion++;
+                                      showQuestion(currentQuestion);
+                                  }
+                              });
+
+                              function collectAnswers() {
+                                  const activeQuestion = document.querySelector('.question.active');
+                                  const selectedOption = activeQuestion.querySelector('input[type="radio"]:checked');
+                                  if (selectedOption) {
+                                      answers[currentQuestion] = selectedOption.nextElementSibling.textContent.trim();
+                                  } else {
+                                      answers[currentQuestion] = 'Keine Antwort';
+                                  }
+                              }
+
+                              // Initialize quiz
+                              showQuestion(currentQuestion);
+
+                          </script>
+                          </div>
+                      </div>
+                        <div class="row my-5">
+                          <div class="col-xl-12 col-md-12">
+                              <div class="card bg-dark text-white mb-4">
+                                  <div class="card-body">Link
+                                      <div class="row">
+                                          <div class="col-xl-12 col-md-12">
+                                              <div class="container my-1">
+                                                  <div class="hover-zoom p-4 rounded shadow bg-light text-center my-3">
+                                                      <h2 class="display-6 text-primary mb-3" style="font-size: 40px;"><a href="prob.html">Weiter zu den Problemen</a></h2>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>    
+                                  </div>
+                                  <div class="card-footer d-flex align-items-center justify-content-between">
+                                      <div class="small text-white"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

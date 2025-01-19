@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Navigation Example</title>
+    <style>
+        .dstepper-block {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        .dstepper-none {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .btn {
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        label {
+            font-size: 1rem;
+        }
+
+        .card {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="quizStepper" class="bs-stepper">
+        <!-- Stepper Content -->
+        <div class="bs-stepper-content">
+            <!-- Question 1 -->
+            <div id="question-1" class="bs-stepper-pane dstepper-block">
+                <div class="card">
+                    <h3>Question 1: What is 2 + 2?</h3>
+                    <div>
+                        <input type="radio" id="q1a1" name="q1" value="3">
+                        <label for="q1a1">3</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q1a2" name="q1" value="4">
+                        <label for="q1a2">4</label>
+                    </div>
+                    <button class="btn btn-primary" onclick="goToNext(1)">Next</button>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div id="question-2" class="bs-stepper-pane dstepper-none">
+                <div class="card">
+                    <h3>Question 2: What is the capital of France?</h3>
+                    <div>
+                        <input type="radio" id="q2a1" name="q2" value="Paris">
+                        <label for="q2a1">Paris</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q2a2" name="q2" value="London">
+                        <label for="q2a2">London</label>
+                    </div>
+                    <button class="btn btn-secondary" onclick="goToPrevious(2)">Previous</button>
+                    <button class="btn btn-primary" onclick="goToNext(2)">Next</button>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div id="question-3" class="bs-stepper-pane dstepper-none">
+                <div class="card">
+                    <h3>Question 3: Finish the Quiz</h3>
+                    <button class="btn btn-secondary" onclick="goToPrevious(3)">Previous</button>
+                    <button class="btn btn-success" onclick="finishQuiz()">Finish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goToNext(currentStep) {
+            // Hide the current question
+            document.getElementById(`question-${currentStep}`).classList.remove('dstepper-block');
+            document.getElementById(`question-${currentStep}`).classList.add('dstepper-none');
+
+            // Show the next question
+            const nextStep = currentStep + 1;
+            document.getElementById(`question-${nextStep}`).classList.remove('dstepper-none');
+            document.getElementById(`question-${nextStep}`).classList.add('dstepper-block');
+        }
+
+        function goToPrevious(currentStep) {
+            // Hide the current question
+            document.getElementById(`question-${currentStep}`).classList.remove('dstepper-block');
+            document.getElementById(`question-${currentStep}`).classList.add('dstepper-none');
+
+            // Show the previous question
+            const previousStep = currentStep - 1;
+            document.getElementById(`question-${previousStep}`).classList.remove('dstepper-none');
+            document.getElementById(`question-${previousStep}`).classList.add('dstepper-block');
+        }
+
+        function finishQuiz() {
+            alert("Quiz beendet! Danke fürs Mitmachen!");
+        }
+    </script>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="intro-tab" data-bs-toggle="tab" data-bs-target="#intro" type="button" role="tab" aria-controls="intro" aria-selected="true">Einleitung</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab" aria-controls="details" aria-selected="false">Details</button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary" type="button" role="tab" aria-controls="summary" aria-selected="false">Zusammenfassung</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+            <p>Hier ist die Einleitung...</p>
+            </div>
+            <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
+            <p>Details des Textes...</p>
+            </div>
+            <div class="tab-pane fade" id="summary" role="tabpanel" aria-labelledby="summary-tab">
+            <p>Zusammenfassung der wichtigsten Punkte...</p>
+            </div>
+        </div>
+
+        <div class="accordion" id="summaryAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Abschnitt 1: Einführung
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#summaryAccordion">
+                <div class="accordion-body">
+                  <p>Hier steht die Einführung deines Textes...</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Abschnitt 2: Details
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#summaryAccordion">
+                <div class="accordion-body">
+                  <p>Hier kommen die Details...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row d-flex flex-wrap">
+              <!-- Bild-Bereich -->
+              <div class="col-sm-12  d-flex align-items-stretch">
+                  <div class="card bg-dark text-white mb-4 flex-grow-1">
+                      <div class="card-body text-center">
+                          <img src="assets/img/Flag_of_the_Ottoman_Empire_(1844–1922).svg.png" 
+                               alt="osmanische Flagge" 
+                               class="hover-zoom img-fluid rounded" 
+                               style="max-height: 100%; object-fit: contain;">
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                          <p style="font-size: 15px; color: white;">
+                              Flagge des Osmanischen Reiches von 1844 bis 1922
+                          </p>
+                          <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                      </div>
+                  </div>
+              
+          
+              <!-- Text-Bereich -->
+              <div class="col-sm-12 d-flex align-items-stretch">
+                  <div class="card bg-dark text-white mb-4 flex-grow-1">
+                      <div class="card-body text-center">
+                          <div class="hover-zoom p-4 rounded shadow bg-light text-center my-3">
+                              <h2 class="display-6 text-primary mb-3" style="font-size: 45px; padding-bottom: 30px;">
+                                  Palästina unter Osmanischer Herrschaft
+                              </h2>
+                              <p class="lead text-secondary" style="font-size: 18px; text-align: justify;">
+                                  Die Region von Palästina gehört von  1516 bis 1917 zum sogenannten osmanischem Reich. Zu der Zeit lag Palästina an der südöstlichen Küste des Mittelmeeres. Heute liegen dort der Staat Israel, der Gazastreifen, das Westjordanland, Teile Syriens, des Libanon und Jordaniens (das Ostjordanland). Nachdem osmanische Türken im Jahr 1516 die dort regierenden Mamluken besiegten, gliederten sie Palästina in das Osmanische Reich ein, dessen Bestandteil es mehr als vier Jahrhunderte lang war. Die Region war sehr muslimisch geprägt und da sich das osmanische Reich immer weiter ausbreitete war ein baldiger Widerstand nicht abzusehen.  In Palästina gab es zu der Zeit kaum Juden und Christen. Allerdings gab es weitestgehend kaum Einschränkungen für jüdische und christliche Gemeinden. Da das osmanische Reich so groß war regierten meist Lokalherrscher die einzelnen Regionen, so auch in Palästina. Dieser (Dhaher al-Omar, 1690 bis 1775) sprach sich offen gegen die Zentralregierung des Osmanischen Reiches aus. Nachdem der ägyptische Herrscher  Ali Bey al-Kabir sich unabhängig vom osmanischen Reich machte, stellte Daher sich an dessen Seite. Doch Ali Bey al-Kabir wurde bei einer pro-osmanischen Verschwörung getötet. Daher el-Omars Hauptstadt Akko wurde von osmanischen Regierungstruppen eingenommen und er selbst gefangen genommen. Schließlich starb er auf der Flucht. Im 19 Jh. kam es vermehrt zu Unabhängigkeiten von Provinzen. Ägypten eroberte Syrien und Palästina und fügte dem osmanischen Reich eine starke Niedderlage zu. Dadurch gab es nun mehr Gleichberechtigung für Christen und Juden.Nach einigen Jahren mussten sich die Ägypter wieder zurück ziehen. Die wichtigsten europäischen Großmächte, allen voran Großbritannien, unterstützten das Osmanische Reich in seinen Bestrebungen, die alten Gebiete zurück zu gewinnen. In der zweiten Hälfte des 19. Jahrhunderts nahm das Interesse der Europäer am Heiligen Land zu. Aus Europa kamen auch die ersten Gruppen jüdischer Siedler, um sich in Palästina anzusiedeln.1909 wurde die erste moderne jüdische Stadt gegründet: Tel-Aviv. Im ersten Weltkrieg verbündete sich das osmanische Reich mit dem Deutschen Reich und Österreich-Ungarn. Mit dem Ende des Krieges fiel das osmanische Reich auseinander. Die Kolonialmächte Großbritannien und Frankreich teilten sich den Nahen Osten untereinander auf. In dem Sykes-Picot-Abkommen von 1916 war vereinbart worden, das Großbritannien nach dem Krieg die Kontrolle über Palästina und den Irak, Frankreich über den Libanon und Syrien bekommt. Somit begann mit dem Ende des Ersten Weltkriegs bzw. praktisch schon mit der Besetzung Palästinas 1917 die britische Herrschaft in Form einer Militärverwaltung und schließlich 1920 mit dem Mandat des Völkerbundes.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="card-footer d-flex align-items-center justify-content-between">
+                          <p>Palästina unter Osmanischer Herrschaft</p>
+                          <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+  
+</body>
+</html>
