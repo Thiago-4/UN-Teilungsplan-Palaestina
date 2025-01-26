@@ -11246,5 +11246,5 @@ body {
   transition: transform 0.3s ease; /* Sanfte Animation */
 }
 .hover-zoom:hover {
-  transform: scale(1.1); /* Bild um 20% vergrößern */
+  transform: scale(1.05); /* Bild um 20% vergrößern */
 }
